@@ -1,0 +1,246 @@
+.board {
+    display: flex;
+    position: relative;
+    top: 25px;
+}
+.topnav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: -webkit-fill-available;
+}
+
+#draggablePanelList .panel-heading {
+    cursor: move;
+}
+
+#draggablePanelList2 .panel-heading {
+    cursor: move;
+}
+
+body {
+    /*background-image: url("http://www.mebelitto.com/upload/b/beautiful-garden-pictures-best-garden-the-most-beautiful-home-interesting-design-most-beautiful-pictures-of-the-best-garden-in-the-world.jpg ");*/
+    background-image: url("https://images.unsplash.com/photo-1485841938031-1bf81239b815?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3dd2286683e0d9f9e61f961ec956c313&auto=format&fit=crop&w=1514&q=80");
+    /*background-image: url("https://alnavio.com/fotos/1/marihuanaBrasil.jpg");*/
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.card-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    display: none;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    text-align: left!important;
+}
+
+.description-area {
+    width: -webkit-fill-available;
+}
+
+
+body {
+    /* just for this demo. */
+
+    padding: 30px;
+}
+
+.btn {
+    /* just for this demo. */
+
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+.btn-arrow-right:before, .btn-arrow-left:after {
+    background-color: #5cb85c!important;
+}
+
+.btn-arrow-right,
+.btn-arrow-left {
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.btn-arrow-right {
+    padding-left: 36px;
+}
+
+.btn-arrow-left {
+    padding-right: 36px;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-right:after,
+.btn-arrow-left:before,
+.btn-arrow-left:after {
+    /* make two squares (before and after), looking similar to the button */
+
+    content: "";
+    position: absolute;
+    top: 5px;
+    /* move it down because of rounded corners */
+
+    width: 22px;
+    /* same as height */
+
+    height: 22px;
+    /* button_outer_height / sqrt(2) */
+
+    background: inherit;
+    /* use parent background */
+
+    border: inherit;
+    /* use parent border */
+
+    border-left-color: transparent;
+    /* hide left border */
+
+    border-bottom-color: transparent;
+    /* hide bottom border */
+
+    border-radius: 0px 4px 0px 0px;
+    /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */
+
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-right:after {
+    transform: rotate(45deg);
+    /* rotate right arrow squares 45 deg to point right */
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+.btn-arrow-left:before,
+.btn-arrow-left:after {
+    transform: rotate(225deg);
+    /* rotate left arrow squares 225 deg to point left */
+
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+}
+
+.btn-arrow-right:before,
+.btn-arrow-left:before {
+    /* align the "before" square to the left */
+
+    left: -11px;
+}
+
+.btn-arrow-right:after,
+.btn-arrow-left:after {
+    /* align the "after" square to the right */
+
+    right: -11px;
+}
+
+.btn-arrow-right:after,
+.btn-arrow-left:before {
+    /* bring arrow pointers to front */
+
+    z-index: 1;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-left:after {
+    /* hide arrow tails background */
+
+    background-color: white;
+}
+
+.w3-sidebar {
+    right: 0px;
+    top: 52px;
+}
